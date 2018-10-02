@@ -1,9 +1,10 @@
 import React from 'react';
 import {Provider} from 'react-redux';
+import App from './app';
 
 const Root = ({store}) => (
   <Provider store = {store}>
-    <h1>I'm the root</h1>
+    <App />
   </Provider>
 );
 
