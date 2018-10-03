@@ -1,9 +1,11 @@
-var path = require('path');
 
+var path = require('path');
+// var path = 'http://localhost:3000/';
 module.exports = {
   entry: './frontend/todo_redux.jsx',
   output: {
-    filename: './app/assets/javscripts/bundle.js'
+    path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
+    filename: 'bundle.js'
   },
   module: {
     rules: [
